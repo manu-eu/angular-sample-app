@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Knowledge/Project Type</th>
+        <th>Zone</th>
+        <th>Function</th>
+        <th>Status</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let takt of takts; index as i">
+            <td>{{takt.name}}</td>
+            <td>{{takt.projectType}} - {{takt.knowledge}}</td>
+            <td>{{takt.zone}}</td>
+            <td>{{takt.function}}</td>
+            <td>{{takt.status}}</td>
+        </tr>
+    </tbody>
+</table>

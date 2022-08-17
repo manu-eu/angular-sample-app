@@ -1,0 +1,36 @@
+.search-bar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    &__search-field {
+        flex-grow: 1;
+    }
+
+    &__search-button {
+        margin: 0;
+        padding: 0;
+
+        font-size: 1.5rem;
+        color: var(--text-secondary);
+
+        background: none;
+        border: none;
+        outline: none;
+
+        cursor: pointer;
+        transition: color 150ms ease-in-out;
+
+        &:hover {
+            color: var(--text-primary);
+        }
+    }
+}
+
+.search-results-badge {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
