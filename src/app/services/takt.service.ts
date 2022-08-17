@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 export interface Takt {
+  favorite: boolean;
   name: string;
   projectType: string;
   knowledge: string;
@@ -11,6 +12,7 @@ export interface Takt {
 
 const fakeTakts: Takt[] = [
   {
+    favorite: false,
     name: 'CapEx Packing Champions DB',
     projectType: 'Agile scrum',
     knowledge: 'Project',
@@ -19,6 +21,7 @@ const fakeTakts: Takt[] = [
     status: 'Completed'
   },
   {
+    favorite: false,
     name: 'Standardise corrugated packaging',
     projectType: 'Black Belt',
     knowledge: 'Project',
@@ -27,6 +30,7 @@ const fakeTakts: Takt[] = [
     status: '100% Completed'
   },
   {
+    favorite: false,
     name: 'Consumer Complaints Management',
     projectType: 'Green Belt',
     knowledge: 'Project',
@@ -35,6 +39,7 @@ const fakeTakts: Takt[] = [
     status: '100% On Time'
   },
   {
+    favorite: true,
     name: 'Reduction of the cost of the supply of the equipment',
     projectType: 'Black Belt',
     knowledge: 'Project',
@@ -43,6 +48,7 @@ const fakeTakts: Takt[] = [
     status: '100% On Time'
   },
   {
+    favorite: false,
     name: 'Extract Losses LB6',
     projectType: 'Green Belt',
     knowledge: 'Project',
