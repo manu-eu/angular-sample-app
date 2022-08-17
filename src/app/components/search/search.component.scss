@@ -1,0 +1,35 @@
+.search-field {
+    border: none;
+    padding: 0rem;
+    margin: 0.5rem 0rem;
+
+    position: relative;
+
+    &__field {
+        margin-left: 1.75rem;
+        border: none;
+        border-bottom: 0.2rem solid var(--text-secondary);
+        font-size: 0.95rem;
+        color: var(--text-primary);
+
+        width: calc(100% - 1.75rem);
+
+        &::placeholder {
+            color: var(--text-muted);
+        }
+
+        &:active, &:focus, &:focus-within {
+            outline: none;
+        }
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        color: var(--text-secondary);
+    }
+}
+
