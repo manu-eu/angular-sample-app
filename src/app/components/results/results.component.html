@@ -1,18 +1,66 @@
-<table>
-    <thead>
-        <th>Name</th>
-        <th>Knowledge/Project Type</th>
-        <th>Zone</th>
-        <th>Function</th>
-        <th>Status</th>
+<table class="results-table">
+    <thead class="results-table__header">
+        <th class="results-table__header__cell"></th>
+        <th class="results-table__header__cell results-table__header__cell--border-bottom">
+            Name
+        </th>
+        <th class="results-table__header__cell results-table__header__cell--border-bottom">
+            <div class="results-table__header__cell__wrapper">
+                Knowledge/Project Type <mat-icon class="results-table__header__icon" fontIcon="arrow_drop_down"></mat-icon>
+            </div>
+        </th>
+        <th class="results-table__header__cell results-table__header__cell--border-bottom">
+            <div class="results-table__header__cell__wrapper">
+                Zone <mat-icon class="results-table__header__icon" fontIcon="arrow_drop_down"></mat-icon>
+            </div>
+        </th>
+        <th class="results-table__header__cell results-table__header__cell--border-bottom">
+            <div class="results-table__header__cell__wrapper">
+                Function <mat-icon class="results-table__header__icon" fontIcon="arrow_drop_down"></mat-icon>
+            </div>
+        </th>
+        <th class="results-table__header__cell results-table__header__cell--border-bottom">
+            <div class="results-table__header__cell__wrapper">
+                Status <mat-icon class="results-table__header__icon" fontIcon="arrow_drop_down"></mat-icon>
+            </div>
+        </th>
     </thead>
-    <tbody>
+    <tbody class="results-table__body">
         <tr *ngFor="let takt of takts; index as i">
-            <td>{{takt.name}}</td>
-            <td>{{takt.projectType}} - {{takt.knowledge}}</td>
-            <td>{{takt.zone}}</td>
-            <td>{{takt.function}}</td>
-            <td>{{takt.status}}</td>
+            <td>
+                <div class="results-table__body__icon-wrapper">
+                    <mat-icon
+                        fontIcon="star"
+                        class="results-table__body__favorite-icon"
+                        [ngClass]="takt.favorite ? 'results-table__body__favorite-icon--active' : 'results-table__body__favorite-icon--muted'"
+                    ></mat-icon>
+                </div>
+            </td>
+            <td>
+                <div class="results-table__body__icon-wrapper results-table__body__icon-wrapper--text-left">
+                    {{takt.name}}
+                </div>
+            </td>
+            <td>
+                <div class="results-table__body__icon-wrapper results-table__body__icon-wrapper--text-left">
+                    {{takt.projectType}} - {{takt.knowledge}}
+                </div>
+            </td>
+            <td>
+                <div class="results-table__body__icon-wrapper results-table__body__icon-wrapper--text-left">
+                    {{takt.zone}}
+                </div>
+            </td>
+            <td>
+                <div class="results-table__body__icon-wrapper results-table__body__icon-wrapper--text-left">
+                    <mat-icon fontIcon="inventory_2" class="results-table__body__favorite-icon"></mat-icon>{{takt.function}}
+                </div>
+            </td>
+            <td>
+                <div class="results-table__body__icon-wrapper results-table__body__icon-wrapper--text-left">
+                    {{takt.status}}
+                </div>
+            </td>
         </tr>
     </tbody>
 </table>
