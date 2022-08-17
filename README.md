@@ -1,27 +1,37 @@
-# Luxfacta
+# App Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+## Instalação
 
-## Development server
+Após clonar o projeto, será necessário instalar as dependências do projeto.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Basta executar
 
-## Code scaffolding
+```
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Caso deseje utilizar o Yarn, execute
 
-## Build
+```
+yarn install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Execução
 
-## Running unit tests
+Para executar o projeto basta executar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+npm run start
+```
 
-## Running end-to-end tests
+Caso utilize Yarn você pode executar
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+yarn start
+```
 
-## Further help
+## Requisitos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* npm - v8.5.1
+* yarn - v1.22.18
+* node - v16.14.0
